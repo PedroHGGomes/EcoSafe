@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using SafeTech.Data;
+using EcoSafe.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

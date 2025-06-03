@@ -1,0 +1,31 @@
+﻿@model IEnumerable<EcoSafe.Models.ABRIGO>
+
+@{
+    ViewData["Title"] = "Lista de Abrigos";
+}
+
+<h1>Lista de Abrigos</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Capacidade</th>
+            <th>Ocupação Atual</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var abrigo in Model)
+        {
+            <tr>
+                <td>@abrigo.ID_ABRIGO</td>
+                <td>@abrigo.NOME</td>
+                <td>@abrigo.ENDERECO</td>
+                <td>@abrigo.CAPACIDADE</td>
+                <td>@abrigo.OCUPACAO_ATUAL</td>
+            </tr>
+        }
+    </tbody>
+</table>

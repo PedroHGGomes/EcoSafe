@@ -14,7 +14,7 @@ namespace EcoSafe.Models
         public int ID_SENSOR { get; set; }
         public SENSOR SENSOR { get; set; }
 
-        [Column("VALOR")]
+        [Column("VALOR", TypeName ="NUMBER(10,2)")]
         public decimal VALOR { get; set; }
 
         [Column("DATA_LEITURA")]

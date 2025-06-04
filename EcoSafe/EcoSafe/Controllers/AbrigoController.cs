@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using EcoSafe.Data;
+﻿using EcoSafe.Data;
 using EcoSafe.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -23,29 +21,45 @@ namespace EcoSafe.Controllers
             return View(abrigos);
         }
 
-
+        
         [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
 
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ABRIGO abrigo)
         {
+
             if (ModelState.IsValid)
             {
-                _context.ABRIGOS.Add(abrigo);
-                await _context.SaveChangesAsync();
-                TempData["SuccessMessage"] = "Abrigo cadastrado com sucesso!";
-                return RedirectToAction(nameof(Index)); 
+                Console.WriteLine($">>>>> RECEBI O FORM: {abrigo.NOME}");
+
+                try
+                {
+                    _context.ABRIGOS.Add(abrigo);
+                    await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Abrigo cadastrado com sucesso!";
+
+                    return RedirectToAction(nameof(Index)); 
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($">>>> ERRO AO SALVAR: {ex.Message}");
+                    ModelState.AddModelError("", "Erro ao salvar o abrigo. Tente novamente.");
+                }
             }
+            else
+            {
+                Console.WriteLine(">>>> MODELSTATE INVALIDO");
+            }
+
             return View(abrigo);
         }
-
-
-
     }
 }
+
 

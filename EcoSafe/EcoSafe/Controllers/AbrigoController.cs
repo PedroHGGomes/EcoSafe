@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using EcoSafe.Data;
 using EcoSafe.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EcoSafe.Controllers
 {

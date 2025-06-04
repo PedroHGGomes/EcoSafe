@@ -15,6 +15,8 @@
 }
 
 <form asp-action="Create" method="post" class="mt-4">
+    @Html.AntiForgeryToken()
+
     <div class="mb-3">
         <label asp-for="NOME" class="form-label">Nome</label>
         <input asp-for="NOME" class="form-control" />
@@ -45,4 +47,3 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
-

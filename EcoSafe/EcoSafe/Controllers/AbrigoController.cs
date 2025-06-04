@@ -21,6 +21,7 @@ namespace EcoSafe.Controllers
             return View(abrigos);
         }
 
+
         [HttpGet]
         public IActionResult Create()
         {
@@ -36,10 +37,12 @@ namespace EcoSafe.Controllers
                 _context.ABRIGOS.Add(abrigo);
                 await _context.SaveChangesAsync();
                 TempData["SuccessMessage"] = "Abrigo cadastrado com sucesso!";
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); 
             }
             return View(abrigo);
         }
+
+
 
     }
 }

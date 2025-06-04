@@ -1,0 +1,48 @@
+﻿@model EcoSafe.Models.ABRIGO
+
+@{
+    ViewData["Title"] = "Cadastrar Abrigo";
+}
+
+<h1>Cadastrar Novo Abrigo</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form asp-action="Create" method="post" class="mt-4">
+    <div class="mb-3">
+        <label asp-for="NOME" class="form-label">Nome</label>
+        <input asp-for="NOME" class="form-control" />
+        <span asp-validation-for="NOME" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ENDERECO" class="form-label">Endereço</label>
+        <input asp-for="ENDERECO" class="form-control" />
+        <span asp-validation-for="ENDERECO" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="CAPACIDADE" class="form-label">Capacidade</label>
+        <input asp-for="CAPACIDADE" class="form-control" type="number" />
+        <span asp-validation-for="CAPACIDADE" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="OCUPACAO_ATUAL" class="form-label">Ocupação Atual</label>
+        <input asp-for="OCUPACAO_ATUAL" class="form-control" type="number" />
+        <span asp-validation-for="OCUPACAO_ATUAL" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Cadastrar Abrigo</button>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

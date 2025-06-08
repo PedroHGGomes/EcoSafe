@@ -33,7 +33,8 @@ Resumo do Código: <br>
 
 - API REST que atenda a boas práticas de programação / arquitetura;
  
- ![image](https://github.com/user-attachments/assets/a804a960-2deb-4f6e-a967-06bde5482cd0)
+![image](https://github.com/user-attachments/assets/4db88b9a-a157-4a62-bbe1-dbc5520a4c52)
+
 
 - Apresentar um CRUD pelo menos (GET (mais de 3 rotas e devidamente parametrizadas com QueryParams ou 
 PathParams), POST, PUT, DELETE)

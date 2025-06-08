@@ -19,10 +19,12 @@ namespace EcoSafe.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ABRIGO>>> GetAbrigos()
         {
-            return await _context.ABRIGOS
+            var abrigos = await _context.ABRIGOS
                 .Include(a => a.SENSORES)
                 .Include(a => a.ALERTAS)
                 .ToListAsync();
+
+            return Ok(abrigos); 
         }
 
         [HttpGet("{id}")]
@@ -36,7 +38,7 @@ namespace EcoSafe.Controllers
             if (abrigo == null)
                 return NotFound();
 
-            return abrigo;
+            return Ok(abrigo);
         }
 
         [HttpGet("search")]
@@ -47,9 +49,9 @@ namespace EcoSafe.Controllers
                 .ToListAsync();
 
             if (!resultados.Any())
-                return NotFound();
+                return NotFound(); 
 
-            return resultados;
+            return Ok(resultados);
         }
 
         [HttpPost]
@@ -58,7 +60,7 @@ namespace EcoSafe.Controllers
             _context.ABRIGOS.Add(abrigo);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetAbrigo), new { id = abrigo.ID_ABRIGO }, abrigo);
+            return CreatedAtAction(nameof(GetAbrigo), new { id = abrigo.ID_ABRIGO }, abrigo); 
         }
 
         [HttpPut("{id}")]
@@ -89,7 +91,7 @@ namespace EcoSafe.Controllers
         {
             var abrigo = await _context.ABRIGOS.FindAsync(id);
             if (abrigo == null)
-                return NotFound();
+                return NotFound(); 
 
             _context.ABRIGOS.Remove(abrigo);
             await _context.SaveChangesAsync();
@@ -98,3 +100,4 @@ namespace EcoSafe.Controllers
         }
     }
 }
+

@@ -1,8 +1,29 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Dashboard - EcoSafe";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Bem-vindo ao EcoSafe</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cadastrar Novo Abrigo</h5>
+                    <p class="card-text">Adicione um novo abrigo ao sistema.</p>
+                    <a class="btn btn-success" asp-controller="Abrigo" asp-action="Create">Novo Abrigo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Listar Abrigos</h5>
+                    <p class="card-text">Veja todos os abrigos cadastrados.</p>
+                    <a class="btn btn-primary" asp-controller="Abrigo" asp-action="Index">Listar Abrigos</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

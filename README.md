@@ -10,19 +10,27 @@ Descrição da Solução:
 -	Descrição dos objetivos da solução idealizada:
 
 Desenvolver uma plataforma digital para gerenciamento de abrigos temporários, com funcionalidades que permitam:
+
  •	Controle da ocupação dos abrigos.
+ 
  •	Gestão eficiente de alimentos e doações.
+ 
  •	Cadastro e monitoramento da entrada e saída de pessoas.
+ 
  •	Relatórios em tempo real para apoiar decisões rápidas.
+ 
  
 A solução busca modernizar o processo de resposta a desastres, trazendo mais agilidade e eficiência.
 
 Objetivos da Solução Idealizada:
 
  1.	Organizar e agilizar a gestão de abrigos temporários.
- 2.	Garantir transparência no gerenciamento de ocupação e doações.
- 3.	Reduzir o tempo de resposta em emergências.
- 4.	Facilitar o acesso às informações via dispositivos móveis.
+    
+ 3.	Garantir transparência no gerenciamento de ocupação e doações.
+    
+ 5.	Reduzir o tempo de resposta em emergências.
+    
+ 7.	Facilitar o acesso às informações via dispositivos móveis.
     
 O impacto esperado inclui a redução de riscos, melhor assistência às vítimas e otimização de recursos públicos e privados.
 
@@ -41,7 +49,7 @@ Resumo do Código: <br>
 
 
 - Apresentar um CRUD pelo menos (GET (mais de 3 rotas e devidamente parametrizadas com QueryParams ou 
-PathParams), POST, PUT, DELETE)
+PathParams), POST, PUT, DELETE)<br>
 GET:
 
 ![image](https://github.com/user-attachments/assets/5ac622da-5857-4d01-8a1b-d6252f57abb1)

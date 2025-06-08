@@ -5,36 +5,33 @@
 # Matheus Munuera - RM 557812
 
 
-#SmartLocation
-
 Descrição da Solução:
 
 -	Descrição dos objetivos da solução idealizada:
 
- A solução envolve desenvolver um sistema de localização de cada moto em tempo real, com a utilização de tags bluetooth e mapa digital em tempo real.
-Utilizaremos tanto o visual, com identificações numéricas de cada moto, e dentro desse objeto, colocaremos nossas tags para que seja possível realizar o rastreio.
-Objetivos principais:
- •	Rastrear em tempo real cada moto dentro do pátio.
- •	Melhorar o controle de cada motocicleta estacionada.
- •	Melhorar a eficiência operacional.
- •	Aumentar a produtividade de cada funcionário à fim de reduzir custos.
- •	Redução do tempo de busca para encontrar uma motocicleta específica.
- •	Realizar uma organização visual dentro do pátio.
+Desenvolver uma plataforma digital para gerenciamento de abrigos temporários, com funcionalidades que permitam:
+ •	Controle da ocupação dos abrigos.
+ •	Gestão eficiente de alimentos e doações.
+ •	Cadastro e monitoramento da entrada e saída de pessoas.
+ •	Relatórios em tempo real para apoiar decisões rápidas.
+ 
+A solução busca modernizar o processo de resposta a desastres, trazendo mais agilidade e eficiência.
 
-Exemplo visual:
+Objetivos da Solução Idealizada:
 
-![image](https://github.com/user-attachments/assets/9905d341-9297-4220-859d-600a1b3a1a62)
-
-Exemplo 2D:
-
-![image](https://github.com/user-attachments/assets/d49ee753-e343-452f-8b1a-5aafaf1479a8)
+ 1.	Organizar e agilizar a gestão de abrigos temporários.
+ 2.	Garantir transparência no gerenciamento de ocupação e doações.
+ 3.	Reduzir o tempo de resposta em emergências.
+ 4.	Facilitar o acesso às informações via dispositivos móveis.
+    
+O impacto esperado inclui a redução de riscos, melhor assistência às vítimas e otimização de recursos públicos e privados.
 
 
 ________________________________________________________________________________________
 Resumo do Código: <br>
 
 
-- Implementar uma API Restful utilizando ASP.NET Core (Controllers ou Minimal API) 
+- API REST que atenda a boas práticas de programação / arquitetura;
  
  ![image](https://github.com/user-attachments/assets/a804a960-2deb-4f6e-a967-06bde5482cd0)
 

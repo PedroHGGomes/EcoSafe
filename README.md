@@ -134,3 +134,43 @@ Schemas:
 ![image](https://github.com/user-attachments/assets/42b93970-ac0b-4e5c-8afe-93c10ccb5f3b)
 ![image](https://github.com/user-attachments/assets/b0c031e4-83a0-4f36-b0b3-64f848e043a5)
 
+Configuração para um banco de dados relacional:
+
+![image](https://github.com/user-attachments/assets/e947d00b-c839-4f92-ab27-2550e60108c5)
+
+Relacionamento 1:N  :
+
+1:ABRIGO - N:SENSORES
+
+![image](https://github.com/user-attachments/assets/7c748925-2da2-4934-a911-1abc112133fa)
+
+Página - Ecosafe:
+
+Razor:
+
+(Create.cshtml)
+
+![image](https://github.com/user-attachments/assets/1c873245-25d7-4f91-a6af-1e58406684ed)
+
+TagHelper:
+
+(asp-for / asp-action / asp-controller)
+
+![image](https://github.com/user-attachments/assets/91cc112a-1d02-44cd-aefd-eb7212dec6fb)
+
+
+Home:
+
+![image](https://github.com/user-attachments/assets/8bfe0132-0dbe-47cd-867e-0dad4bd2f5eb)
+
+Cadastrar Abrigo:
+
+![image](https://github.com/user-attachments/assets/665dfef2-36f3-46dc-9c50-a724d5130cc1)
+
+Listar Abrigo:
+
+![image](https://github.com/user-attachments/assets/de137829-4694-48db-bdfa-f6995d654c3d)
+
+Política de Privacidade:
+
+![image](https://github.com/user-attachments/assets/f1d8a482-dabb-4c0f-a0db-f153b40ca8b5)

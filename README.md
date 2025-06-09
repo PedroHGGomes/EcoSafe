@@ -120,7 +120,7 @@ Content-Type: application/json<br>
   "ocupacao_Atual": 150<br>
 }<br>
 
-Reposta esperada:<br>
+Resposta esperada:<br>
 
 201 Created<br>
 {

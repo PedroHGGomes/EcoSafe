@@ -45,6 +45,26 @@ Vídeo da descrição - https://youtu.be/2GKzZkAWTeM
 ________________________________________________________________________________________
 Resumo do Código: <br>
 
+Acesso ao código:
+
+1. Execução Local
+2. 
+Para rodar o projeto localmente:
+
+ git clone https://github.com/seu-usuario/seu-repositorio.git<br>
+ dotnet restore<br>
+ dotnet ef database update<br>
+ dotnet run<br>
+ 
+2. URL de Acesso
+Após rodar o projeto, acesse:
+
+Aplicação Web (MVC - Razor Pages):
+https://localhost:7117/
+
+Documentação da API (Swagger):
+https://localhost:7117/swagger
+
 
 - API REST que atenda a boas práticas de programação / arquitetura;
  

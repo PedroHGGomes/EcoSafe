@@ -47,12 +47,12 @@ ________________________________________________________________________________
 <h2>Acesso ao código:</h2>
 
 1. Execução Local
-2. 
+   
 Para rodar o projeto localmente:
 
  git clone https://github.com/PedroHGGomes/EcoSafe.git<br>
  dotnet restore<br>
- dotnet ef database update<br>
+ dotnet ef database update  (verifice o .json para conectar com o seu banco de dados Oracle)<br>
  dotnet run<br>
  
 2. URL de Acesso
@@ -77,6 +77,49 @@ Todas as requisições API retornam status HTTP apropriados:
 404 NotFound para registros não encontrados
 
 204 NoContent para deleções
+
+<h2>🛠️ Funcionalidades Disponíveis</h2>
+
+
+<h3>Web (MVC Razor)</h3>
+
+Funcionalidade	Caminho
+
+🏠 Página Inicial	/Home/Index
+
+➕ Novo Abrigo	/Abrigo/Create
+
+📋 Listar Abrigos	/Abrigo/Index
+
+
+<h3>API RESTful</h3>
+
+Método	Endpoint	Descrição
+
+GET	/api/AbrigoApi	Lista todos os abrigos
+
+GET	/api/AbrigoApi/{id}	Busca abrigo por ID
+
+GET	/api/AbrigoApi/search?nome={nome}	Busca abrigo por nome
+
+POST	/api/AbrigoApi	Cadastra um novo abrigo
+
+PUT	/api/AbrigoApi/{id}	Atualiza um abrigo existente
+
+DELETE	/api/AbrigoApi/{id}	Remove um abrigo
+
+<h2>Exemplo de Requisição</h2>
+
+POST /api/AbrigoApi
+Content-Type: application/json
+
+{
+  "nome": "Abrigo Central",
+  "endereco": "Rua das Flores, 123",
+  "capacidade": 200,
+  "ocupacao_Atual": 150
+}
+
 
 
 <h2>Informações do código</h2>:

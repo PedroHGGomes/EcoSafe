@@ -110,26 +110,26 @@ DELETE	/api/AbrigoApi/{id}	Remove um abrigo
 
 <h2>Exemplo de Requisição</h2>
 
-POST /api/AbrigoApi
-Content-Type: application/json
+POST /api/AbrigoApi<br>
+Content-Type: application/json<br>
 
+{<br>
+  "nome": "Abrigo Central",<br>
+  "endereco": "Rua das Flores, 123",<br>
+  "capacidade": 200,<br>
+  "ocupacao_Atual": 150<br>
+}<br>
+
+Reposta esperada:<br>
+
+201 Created<br>
 {
-  "nome": "Abrigo Central",
-  "endereco": "Rua das Flores, 123",
-  "capacidade": 200,
-  "ocupacao_Atual": 150
-}
-
-Reposta esperada:
-
-201 Created
-{
-  "id_ABRIGO": 1,
-  "nome": "Abrigo Central",
-  "endereco": "Rua das Flores, 123",
-  "capacidade": 200,
-  "ocupacao_Atual": 150
-}
+  "id_ABRIGO": 1,<br>
+  "nome": "Abrigo Central",<br>
+  "endereco": "Rua das Flores, 123",<br>
+  "capacidade": 200,<br>
+  "ocupacao_Atual": 150<br>
+}<br>
 
 
 

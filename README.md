@@ -51,7 +51,7 @@ Acesso ao código:
 2. 
 Para rodar o projeto localmente:
 
- git clone https://github.com/seu-usuario/seu-repositorio.git<br>
+ git clone https://github.com/PedroHGGomes/EcoSafe.git<br>
  dotnet restore<br>
  dotnet ef database update<br>
  dotnet run<br>
@@ -65,6 +65,22 @@ https://localhost:7117/
 Documentação da API (Swagger):
 https://localhost:7117/swagger
 
+OBSERVAÇÃO:
+
+Todas as requisições API retornam status HTTP apropriados:
+
+200 OK para sucesso
+
+201 Created para criação
+
+400 BadRequest para dados inválidos
+
+404 NotFound para registros não encontrados
+
+204 NoContent para deleções
+
+
+Informações do código:
 
 - API REST que atenda a boas práticas de programação / arquitetura;
  

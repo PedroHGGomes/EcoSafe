@@ -43,7 +43,6 @@ Vídeo PITCH - https://youtu.be/0Efr--jnxt8
 Vídeo da descrição - https://youtu.be/2GKzZkAWTeM
 
 ________________________________________________________________________________________
-Resumo do Código: <br>
 
 <h2>Acesso ao código:</h2>
 
@@ -65,7 +64,7 @@ https://localhost:7117/
 Documentação da API (Swagger):
 https://localhost:7117/swagger
 
-OBSERVAÇÃO:
+<h2>OBSERVAÇÃO</h2>:
 
 Todas as requisições API retornam status HTTP apropriados:
 
@@ -80,7 +79,7 @@ Todas as requisições API retornam status HTTP apropriados:
 204 NoContent para deleções
 
 
-Informações do código:
+<h2>Informações do código</h2>:
 
 - API REST que atenda a boas práticas de programação / arquitetura;
  

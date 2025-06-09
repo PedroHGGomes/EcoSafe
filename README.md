@@ -9,7 +9,7 @@ Descrição da Solução:
 
 -	Descrição dos objetivos da solução idealizada:
 
-Desenvolver uma plataforma digital para gerenciamento de abrigos temporários, com funcionalidades que permitam:
+Desenvolver uma plataforma digital para gerenciamento de abrigos temporários, com funcionalidades que permitam:<br>
 
  •	Controle da ocupação dos abrigos.
  
@@ -22,7 +22,7 @@ Desenvolver uma plataforma digital para gerenciamento de abrigos temporários, c
  
 A solução busca modernizar o processo de resposta a desastres, trazendo mais agilidade e eficiência.
 
-Objetivos da Solução Idealizada:
+Objetivos da Solução Idealizada:<br>
 
  1.	Organizar e agilizar a gestão de abrigos temporários.
     
@@ -44,7 +44,7 @@ Vídeo da descrição - https://youtu.be/2GKzZkAWTeM
 
 ________________________________________________________________________________________
 
-<h2>Acesso ao código:</h2>
+<h2>Acesso ao código</h2>
 
 1. Execução Local
    
@@ -64,7 +64,7 @@ https://localhost:7117/
 Documentação da API (Swagger):
 https://localhost:7117/swagger
 
-<h2>OBSERVAÇÃO</h2>:
+<h2>OBSERVAÇÃO</h2>
 
 Todas as requisições API retornam status HTTP apropriados:
 
@@ -120,9 +120,20 @@ Content-Type: application/json
   "ocupacao_Atual": 150
 }
 
+Reposta esperada:
+
+201 Created
+{
+  "id_ABRIGO": 1,
+  "nome": "Abrigo Central",
+  "endereco": "Rua das Flores, 123",
+  "capacidade": 200,
+  "ocupacao_Atual": 150
+}
 
 
-<h2>Informações do código</h2>:
+
+<h2>Informações do código</h2>
 
 - API REST que atenda a boas práticas de programação / arquitetura;
  
